@@ -1,0 +1,755 @@
+<html>
+
+
+<head>
+
+
+<title> Prototype Social
+     000.01
+     </title>
+
+    
+    
+  <!-- Wimpy Engine -->
+<script src="wimpy.js"></script>
+
+    
+    
+    
+    
+    
+</head>
+
+
+
+
+<style>
+    
+    
+    
+    #header{
+        height: 100px;
+        background-color: #0d0202;
+        width: 100%;
+        color:white;
+        font-size:40px;
+        
+    }
+    
+    
+    #nav_bar {
+ float: left;   
+ border-collapse: collapse;
+  border-spacing: 1000px;
+  width: 1000000px;
+  border: 0px solid #0d0d0d;
+        
+        
+        
+        
+        
+    }
+    
+    
+    #active_nav{
+        overflow-x:auto;
+         width: 100%;
+         
+        
+    }
+    
+    
+    
+    #hiden_div{
+         height: 60px;
+        width: 200px; 
+         float:default;
+         display: inline;
+    }
+    
+    #Home{
+        
+        
+        
+        height: 50px;
+        width: 120px; 
+         display: inline;
+        
+        background-color: #0d0d0d;
+        text-align: left;
+        padding: 8px;
+        color:#0d0d0d;
+        font-size:40px;
+        
+        
+        
+    }
+    
+    
+    
+        #Browse{
+        
+        
+        
+        height: 50px;
+        width: 120px; 
+        display: inline;
+          
+        background-color: #0d0d0d;
+        text-align: left;
+        padding: 8px;
+        color:#d9dfeb;
+        font-size:40px;
+        
+        
+        
+    }
+        
+    
+    
+    
+    
+    
+    #Music{
+        
+        
+        
+        height: 50px;
+        width: 120px; 
+        display: inline;
+          
+        background-color: #0d0d0d;
+        text-align: auto;
+        padding: 8px;
+        color:#d9dfeb;
+        font-size:40px;
+        
+    }
+        
+        
+         #Videos{
+        
+        
+        
+        height: 50px;
+        width: 120px; 
+        display: inline;
+        
+        background-color: #0d0d0d;
+        text-align: auto;
+        padding: 8px;
+        color:#d9dfeb;
+        font-size:40px;
+        
+    }
+        
+        
+        
+        
+          #Live{
+        
+        
+        
+        height: 50px;
+        width: 120px; 
+        display: inline;
+          float: auto;
+        background-color: #0d0d0d;
+        text-align: auto;
+        padding: 8px;
+        color:#d9dfeb;
+        font-size:40px;
+        
+    }
+        
+        
+         #Groups{
+        
+        
+        
+        height: 50px;
+        width: 120px; 
+        display: inline;
+          float:auto;
+        background-color: #0d0d0d;
+        text-align: left;
+        padding: 8px;
+        color:#d9dfeb;
+        font-size:40px;
+        
+    }
+        
+        
+    
+    
+     #Karaoke{
+        
+        
+        
+        height: 50px;
+        width: 120px; 
+        display: inline;
+          float:auto;
+        background-color: #0d0d0d;
+        text-align: left;
+        padding: 8px;
+        color:#d9dfeb;
+        font-size:40px;
+        
+    }
+        
+    
+     #Games{
+        
+        
+        
+        height: 50px;
+        width: 120px; 
+        display: inline;
+          float:auto;
+        background-color: #0d0d0d;
+        text-align: left;
+        padding: 8px;
+        color:#d9dfeb;
+        font-size:40px;
+        
+    }
+    
+    
+      #Market{
+        
+        
+        
+        height: 50px;
+        width: 120px; 
+        display: inline;
+          float:auto;
+        background-color: #0d0d0d;
+        text-align: left;
+        padding: 8px;
+        color:#d9dfeb;
+        font-size:40px;
+        
+    }
+    
+    
+    
+    
+    
+
+    
+    #content{
+                 width: 800px;
+                 margin: auto;
+                 
+                 min-height: 400px;
+        
+        
+        
+    }
+    
+    
+    
+    
+    #user{
+             
+           background-color: #0d0d0d;
+           text-align: center;
+            color: #dbdbdb;
+        
+
+    }
+    
+    #aboutme{
+        
+        background-color: #0d0d0d;
+           text-align: center;
+            color: #dbdbdb;
+        
+        
+    }
+    
+    
+    #coverphoto{
+        
+        
+        Width: 100%;
+        
+       
+        
+    }
+    
+    
+    
+    
+    #profilepicture{
+                     
+                    width: 150px;
+                    height: 150px;
+                    margin-top: -200px;
+        
+                    border-radius: 50%;
+                    border: solid 2PX white;
+                     
+        
+        
+        
+        
+    }
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: white}
+    
+
+    
+    #friendpicture{
+                     
+                    width: 150px;
+                    height: 150px;
+                  
+        
+                    border-radius: 20%;
+                    border: solid 2PX white;
+                     
+        
+        
+        
+        
+    }
+    
+    
+    
+    #interests{
+        
+        
+        
+  
+      
+      
+      Width: 100%;
+      
+   background-color: #0d0d0d;
+           text-align: center;
+            color: #dbdbdb;
+         
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+      #music1{
+        
+        
+        
+  
+      
+      
+     Width: 100%;
+      
+     
+  background-color: white;
+           text-align: center;
+            color: #405d9b;
+        
+        
+        
+        
+    }
+    
+     #Movies{
+        
+        
+        
+  
+      
+      
+      Width: 100%;
+      
+     
+ background-color: white;
+           text-align: center;
+            color: #405d9b;
+        
+        
+    }
+    
+    
+     #Videogames{
+        
+        
+        
+  
+      
+      
+      Width: 100%;
+      
+     
+ background-color: white;
+           text-align: center;
+            color: #405d9b;
+        
+        
+    }
+    
+    
+    
+     #Books{
+        
+        
+        
+  
+      
+      
+      Width: 100%;
+      
+     
+ background-color: white;
+           text-align: center;
+            color: #405d9b;
+        
+        
+        
+    }
+    
+    
+    
+    
+     #youtube{
+        
+        
+        
+  
+      
+      
+      Width: 100%;
+      
+     
+ background-color: white;
+           text-align: center;
+            color: #405d9b;
+        
+        
+    }
+    
+    
+    
+     #tiktok{
+        
+        
+        
+  
+      
+      
+      Width: 100%;
+      
+     
+ background-color: #0d0d0d;
+           text-align: center;
+            color: #dbdbdb;
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+  #footer{
+        height: 50px;
+        
+        width: 100%;
+        background-color:#0d0d0d;
+        font-size:40px;   
+    
+    }
+    
+    
+    
+    
+    
+  a{
+  color: #e50111;  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+
+
+<body style="font-family: tahoma; background-color: #000; background-image: url('background.jpg');background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; ">
+    
+<!--top bar-->
+<div id="header">  Prototype Social
+  <br>   000.01  </div>
+    
+
+    
+    <div id="active_nav">
+        
+        
+    <div id="nav_bar">
+        <div id="hiden_div"></div>
+        <div id="hiden_div"></div>
+    <div id="Home">        <a href="user.html">|Home|</a></div>   
+    <div id="Browse">     <a href="browse.html">|Browse|</a></div>
+    <div id="Music">      <a href="music.html">|Music|</a></div>
+    <div id="Videos">     <a href="video.html">|Videos|</a></div>
+    <div id="Live">       <a href="live.html">|Live|</a></div>
+    <div id="Groups">     <a href="groups.html">|Groups|</a></div>
+    <div id="Karaoke">     <a href="karaoke.html">|Karaoke|</a></div>
+     <div id="Games">      <a href="games.html">|Games|</a></div>
+    <div id="Market">      <a href="market.html">|Market|</a></div>
+<div id="hiden_div"></div>
+    </div>
+    
+    </div>    
+
+<!--cover area-->
+
+<div id="content">
+    
+    <div id="user">
+    
+    <img src="cover.jpg" id="coverphoto">
+   <img src="selfie.jpg" id="profilepicture">
+          <br>
+  <li7><a href="#">|Baby Metal|</a></li7>
+      
+        <br> <br> 
+        <li7><a href="#">|My Feed</a></li7>
+        <li7><a href="#">|Add Me|</a></li7>
+        <li7><a href="#">|Chat|</a></li7>
+        <li7><a href="#">|Block Me|</a></li7>
+    
+        <br> <br>
+        
+        
+    </div>
+  
+
+    
+    </div>
+    <!-- Wimpy Player Instance -->
+<div data-wimpyplayer data-media="bang.mp3|disortion.mp3|karate.mp3|megitsum.mp3|shanti.mp3|song.mp3| sis.mp3|starlight.mp3" data-skin="wimpy.skins/Cosa.tsv" data-startUpText="Hello"></div>
+    
+    
+    
+    <br>
+    
+ <div id="aboutme">
+    <h2 style="color:red;"> Bios </h2>
+    
+    
+   The group was initially formed in 2010 as a subunit of the female idol group Sakura Gakuin, aiming to realize a "fusion of metal and idol (music)". J-pop, Kobametal (Babymetal's producer) says that he had been envisioning the creation of a group around Nakamoto Suzuka (Su-metal)'s lead vocals ever since 2009, since the time when Suzuka's group Karen Girl's disbanded. Kobametal looked around for more members and finally decided that because of Suzuka's unique stage presence, the other members should contrast her. "What if other children were dancing around her like angels?", he thought, and so asked Mizuno Yui (Yuimetal) and Kikuchi Moa (Moametal) (both were just 10 years old at the time) to participate. None of the three members knew what metal music was before the inception of the band. Suzuka Nakamoto once said in an interview with MTV 81, "The first time we heard the idea for Babymetal, we were like 'What the?!'".
+
+According to Kobametal, Babymetal's name came to him by revelation (as a "divine message"). It is a play on the words "heavy metal", as, in Japanese, the word "baby" (ベビー bebī) rhymes with "heavy" (ヘビー hebī). "Baby" may indicate cuteness, "metal" – intensity. Also, he has come to like interpreting it as "newborn metal". In an interview for Razor TV while in Singapore in late 2013, the band members also used the latter interpretation. They stated their brand of metal was a newborn genre, and that was what "baby" in "Babymetal" stood for.
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>   
+   <br> <br> <br>
+    <div style="overflow-x:auto;">
+  <h2 style="color:red;"> Fans </h2>
+        <a href="browse.html">|You have zero friends click here to find some|
+         <table>
+    <tr>
+      <th>Friend 1</th>
+      <th>Friend 2</th>
+      <th>Friend 3</th>
+      <th>Friend 4</th>
+      <th>Friend 5</th>
+      <th>Friend 6</th>
+      <th>Friend 7</th>
+      <th>Friend 8</th>
+      <th>Friend 9</th>
+      <th>Friend 10</th>
+      <th>Friend 11</th>
+      <th>Friend 12</th>
+      <th>Friend 13</th>
+      <th>Friend 14</th>
+      <th>Friend 15</th>
+      <th>Friend 16</th>
+      <th>Friend 17</th>
+      <th>Friend 18</th>
+    </tr>
+    <tr>
+      <td><img src="f1.jpeg" id="friendpicture"></td>
+      <td><img src="f2.jpeg" id="friendpicture"></td>
+      <td><img src="f3.png" id="friendpicture"></td>
+      <td><img src="f4.jpeg" id="friendpicture"></td>
+      <td><img src="f5.png" id="friendpicture"></td>
+      <td><img src="f6.png" id="friendpicture"></td>
+      <td><img src="f7.png" id="friendpicture"></td>
+      <td><img src="f8.png" id="friendpicture"></td>
+      <td><img src="f9.png" id="friendpicture"></td>
+      <td><img src="f10.png" id="friendpicture"></td>
+      <td><img src="f11.png" id="friendpicture"></td>
+      <td><img src="f12.png" id="friendpicture"></td>
+      <td><img src="f13.jpg" id="friendpicture"></td>
+      <td><img src="f14.jpg" id="friendpicture"></td>
+      <td><img src="f15.jpg" id="friendpicture"></td>
+      <td><img src="f16.jpg" id="friendpicture"></td>
+      <td><img src="f17.jpg" id="friendpicture"></td>
+      <td><img src="f18.png" id="friendpicture"></td>
+    </tr>
+    
+    
+  </table>
+</div>
+     <div style="overflow-x:auto;">
+ 
+<h2 style="color:red;"> Our Music Videos </h2>
+ 
+ <table>
+    <tr>
+      <th><video width="400" controls>
+  <source src="bm1.mp4" type="video/mp4"> </th>
+      <th><video width="400" controls>
+  <source src="bm2.mp4" type="video/mp4"></th>
+     <th><video width="400" controls>
+  <source src="bm3.mp4" type="video/mp4"></th>
+      <th><video width="400" controls>
+  <source src="bm4.mp4" type="video/mp4"></th>
+          <th><video width="400" controls>
+  <source src="bm5.mp4" type="video/mp4"></th>
+      
+    </tr>
+    
+  </table>
+</div>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="tiktok">
+    
+    <h2 style="color:red;"> Influance </h2>
+    
+   Only the Fox God Knows
+        
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+    
+    
+    
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="footer">
+    
+    
+    
+    <li7><a href="developernotes.html">|Developer Notes</a></li7> <li7><a href="credits.html">|Cridets</a></li7>
+    
+    
+    
+    
+    
+    </div>
+    
+    </body>
+    
+    
+    
+
+
+
+
+</html>
